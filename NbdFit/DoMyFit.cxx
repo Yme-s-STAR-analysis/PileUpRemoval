@@ -152,7 +152,7 @@ int main(int argc, char** argv) {
     std::cout << funcLower->GetParameter(0) << ", " << funcLower->GetParameter(1) << ", " << funcLower->GetParameter(2) << ", " << funcLower->GetParameter(3) << std::endl;
 
     leg->AddEntry(tgMode, "Mode", "p");
-    leg->AddEntry(tgUpper, Form("Uppder cut: %.1f(1+S)#sigma", upperN), "lp");
+    leg->AddEntry(tgUpper, Form("Upper cut: %.1f(1+S)#sigma", upperN), "lp");
     leg->AddEntry(tgLower, Form("Lower cut: %.1f#sigma", lowerN), "lp");
 
     leg->Draw("same");
